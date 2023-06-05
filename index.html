@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header class="mb-5 mt-3">
+        <!-- navbar section start here -->
+        <nav class="navbar container  bg-info p-3 text-white ">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white"> <span class="fw-bolder fw-bold fs-4">Interactive</span> <br>
+                    Geometry Book</a>
+                <button id="blog" class="btn-primary p-2 border-0 rounded px-4">Blog</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- card design strat here -->
+        <section class=" container">
+
+            <div class="row">
+                <div class="col-lg-9 d-flex flex-wrap">
+
+                    <div  id="my-element" class="card col-lg-3 text-center m-1 p-2 " style="width: 18rem;">
+                        <img src="images/triangle.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center ">
+                            <h5 class="card-title fw-bold">Triangle</h5>
+                            <p class="card-text">Area[A] = 0.5 * b * h</p>
+                            <div class="d-flex mb-3">
+                                <input id="triangel-base-input" class="w-50" type="text" placeholder="b ="> cm
+                                <input id="triangel-height-input" class="w-50" type="text" placeholder="h ="> cm
+                            </div>
+                            <a href="#" id="triangle-btn" class="btn btn-primary px-5">Calculate</a>
+                        </div>
+                    </div>
+
+                    <div id="my-change" class="card col-lg-3 text-center m-1 p-2 " style="width: 18rem;">
+
+                        <img src="images/rectangle.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Rectangle</h5>
+                            <p class="card-text">Area (A) = w * l</p>
+                            <div class="d-flex mb-3">
+                                <input id="rectangle-width-input" class="w-50" type="text" placeholder="w ="> cm
+                                <input id="rectangle-length-input" class="w-50" type="text" placeholder="l ="> cm
+                            </div>
+                            <a href="#" id="rectangle-btn" class="btn btn-primary px-5">Calculate</a>
+                        </div>
+                    </div>
+                    <div id="color-change" class="card col-lg-3 text-center m-1 p-2 " style="width: 18rem;">
+                        <img src="images/parallelogram.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Parallelogram</h5>
+                            <p class="card-text">Area (A) = b * h</p>
+                            <div class="d-flex mb-3">
+                                <input id="base-field" class="w-50" type="text" placeholder="b ="> cm
+                                <input id="height-field" class="w-50" type="text" placeholder="h ="> cm
+                            </div>
+                            <a href="#" id="parallelogram-btn" class="btn btn-primary px-5">Calculate</a>
+                        </div>
+                    </div>
+                    <div id="rhombus-color" class="card col-lg-3 text-center m-1 p-2 " style="width: 18rem;">
+                        <img src="images/rhombus.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center ">
+                            <h5 class="card-title fw-bold">Rhombus</h5>
+                            <p class="card-text">Area[A] = 0.5 * d1 * d2</p>
+                            <div class="d-flex mb-3">
+                                <input id="Rhombus-d1field" class="w-50" type="text" placeholder="d1 ="> cm
+                                <input id="Rhombus-d2field" class="w-50" type="text" placeholder="d2 ="> cm
+                            </div>
+                            <a href="#" id="rhombus-btn" class="btn btn-primary px-5">Calculate</a>
+                        </div>
+                    </div>
+                    <div id="color-pentagon" class="card col-lg-3 text-center m-1 p-2 " style="width: 18rem;">
+                        <img src="images/pentagon.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Pentagon</h5>
+                            <p class="card-text">Area[A] = 0.5 * p * b</p>
+                            <div class="d-flex mb-3">
+                                <input id="Pentagon-first" class="w-50" type="text" placeholder="p ="> cm
+                                <input id="Pentagon-second" class="w-50" type="text" placeholder="b ="> cm
+                            </div>
+                            <a href="#" id="pentagon-btn" class="btn btn-primary px-5">Calculate</a>
+                        </div>
+                    </div>
+                    <div id="ellipse-color" class="card col-lg-3 text-center m-1 p-2 " style="width: 18rem;">
+                        <img src="images/ellipse.png" class="card-img-top" alt="...">
+                        <div class="card-body text-center ">
+                            <h5 class="card-title fw-bold">Ellipse</h5>
+                            <p class="card-text">Area[A] =πab</p>
+                            <div class="d-flex mb-3">
+                                <input id="ellipse-first-field" class="w-50" type="text" placeholder="a ="> cm
+                                <input id="ellipse-second-field" class="w-50" type="text" placeholder="b ="> cm
+                            </div>
+                            <a href="#" id="ellipse-btn" class="btn btn-primary px-5">Calculate</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3">
+                    <h2 class="text-center fw-bold ">Area Calculation</h2>
+                    <div class="area bg-light justify-content-between py-3 p-1 d-flex gap-4">
+                        <p>1.Triangel</p>
+                        <p> <span id="triangle-total">00</span>cm <sup>2</sup> </p>
+                        <p class="bg-primary p-2 rounded  text-white">convert m <sup>2</sup></p>
+                    </div>
+                    <div class="area bg-light justify-content-between py-3 p-1 d-flex gap-4">
+                        <p>2.Rectangle</p>
+                        <p> <span id="rectangle-total">00</span>cm <sup>2</sup> </p>
+                        <p class="bg-primary p-2 rounded  text-white">convert m <sup>2</sup></p>
+                    </div>
+                    <div class="area bg-light justify-content-between  py-3 p-1 d-flex gap-3">
+                        <p>3.Parallelogram</p>
+                        <p> <span id="parallelogram-total">00</span>cm <sup>2</sup> </p>
+                        <p class="bg-primary p-2 rounded  text-white">convert m <sup>2</sup></p>
+                    </div>
+                    <div class="area bg-light justify-content-between py-3 p-1 d-flex gap-4">
+                        <p>4.Rhombus</p>
+                        <p> <span id="rhombus-total">00</span>cm <sup>2</sup> </p>
+                        <p class="bg-primary p-2 rounded  text-white">convert m <sup>2</sup></p>
+                    </div>
+                    <div class="area bg-light justify-content-between py-3 p-1 d-flex gap-4">
+                        <p>5.Pentagon</p>
+                        <p> <span id="pentagon-total">00</span>cm <sup>2</sup> </p>
+                        <p class="bg-primary p-2 rounded  text-white">convert m <sup>2</sup></p>
+                    </div>
+                    <div class="area bg-light justify-content-between py-3 p-1 d-flex gap-4">
+                        <p>6.Ellipse</p>
+                        <p> <span id="ellipse-total">00</span>cm <sup>2</sup> </p>
+                        <p class="bg-primary p-2 rounded  text-white">convert m <sup>2</sup></p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            </div>
+
+
+
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+
+  <!-- js file connect -->
+    <script src="js/common.js"></script>
+    <script src="js/triangle.js"></script>
+  <script src="js/rectangle.js"></script>
+  <script src="js/parallelogram.js"></script>
+  <script src="js/rhombus.js"></script>
+  <script src="js/pentagon.js"></script>
+  <script src="js/ellipse.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
